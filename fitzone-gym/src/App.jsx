@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Trainers from "./components/Trainers/Trainers";
 import Pricing from "./components/Pricing/Pricing";
+import Testimonials from "./components/Testimonials/Testimonials";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Programs />
       <Trainers/>
       <Pricing/>
+      <Testimonials/>
     </>
   );
 }
