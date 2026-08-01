@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Trainers from "./components/Trainers/Trainers";
+import Pricing from "./components/Pricing/Pricing";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Programs />
       <Trainers/>
+      <Pricing/>
     </>
   );
 }
