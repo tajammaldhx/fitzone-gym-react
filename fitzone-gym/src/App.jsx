@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Trainers from "./components/Trainers/Trainers";
 import Pricing from "./components/Pricing/Pricing";
 import Testimonials from "./components/Testimonials/Testimonials";
+import BMI from "./components/BMI/BMI";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <Trainers/>
       <Pricing/>
       <Testimonials/>
+      <BMI/>
     </>
   );
 }
