@@ -1,79 +1,116 @@
-.trainers{
-    width:100%;
-    min-height:100vh;
-    background:#111;
-    padding:100px 8%;
+/* Trainers Section */
+.trainers {
+  padding: 80px 8%;
+  background: #111;
+  color: #fff;
 }
 
-.trainer-title{
-    text-align:center;
-    margin-bottom:60px;
+.trainer-heading {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.trainer-title h4{
-    color:#ff5a0a;
-    letter-spacing:2px;
+.trainer-heading h4 {
+  color: #ff4d00;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
-.trainer-title h2{
-    color:white;
-    font-size:50px;
-    margin-top:10px;
+.trainer-heading h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
-.trainer-title span{
-    color:#ff5a0a;
+.trainer-heading h2 span {
+  color: #ff4d00;
 }
 
-.trainer-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+.trainer-heading p {
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+  line-height: 1.7;
 }
 
-.trainer-card{
-    background:#1b1b1b;
-    border-radius:20px;
-    overflow:hidden;
-    text-align:center;
-    transition:.4s;
+/* Trainer Cards */
+.trainer-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: nowrap; /* Sab cards ek hi line mein */
 }
 
-.trainer-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 35px rgba(255,90,10,.25);
+.trainer-card {
+  width: 280px;
+  background: #1d1d1d;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
 }
 
-.trainer-card img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 77, 0, 0.4);
 }
 
-.trainer-card h3{
-    color:white;
-    margin-top:20px;
+.trainer-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
 }
 
-.trainer-card p{
-    color:#ff5a0a;
-    margin:10px 0 20px;
+.trainer-info {
+  padding: 20px;
+  text-align: center;
 }
 
-.social-icons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding-bottom:25px;
+.trainer-info h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
-.social-icons svg{
-    color:white;
-    font-size:20px;
-    cursor:pointer;
-    transition:.3s;
+.trainer-info p {
+  color: #ff4d00;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-.social-icons svg:hover{
-    color:#ff5a0a;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #ff4d00;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .trainer-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainer-heading h2 {
+    font-size: 32px;
+  }
+
+  .trainer-card {
+    width: 100%;
+    max-width: 320px;
+  }
 }
