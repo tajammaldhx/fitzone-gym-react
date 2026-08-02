@@ -1,0 +1,114 @@
+/* ===== Gallery Section ===== */
+
+.gallery {
+  padding: 100px 8%;
+  background: #111;
+  color: #fff;
+}
+
+/* ===== Heading ===== */
+
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery-heading h4 {
+  color: #ff6600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.gallery-heading h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.gallery-heading h2 span {
+  color: #ff6600;
+}
+
+.gallery-heading p {
+  max-width: 700px;
+  margin: auto;
+  color: #bdbdbd;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* ===== Gallery Grid ===== */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ===== Gallery Card ===== */
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+}
+
+.gallery-card:hover {
+  border-color: #ff6600;
+  box-shadow: 0 10px 25px rgba(255, 102, 0, 0.35);
+}
+
+/* ===== Image ===== */
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== Orange Overlay ===== */
+
+.gallery-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 102, 0, 0.25);
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.gallery-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-heading h2 {
+    font-size: 32px;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: 250px;
+  }
+}

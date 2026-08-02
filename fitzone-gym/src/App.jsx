@@ -8,6 +8,7 @@ import Trainers from "./components/Trainers/Trainers";
 import Pricing from "./components/Pricing/Pricing";
 import Testimonials from "./components/Testimonials/Testimonials";
 import BMI from "./components/BMI/BMI";
+import Gallery from "./components/Gallery/Gallery";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
       <Pricing/>
       <Testimonials/>
       <BMI/>
+      <Gallery/>
     </>
   );
 }
