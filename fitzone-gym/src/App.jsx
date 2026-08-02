@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import BMI from "./components/BMI/BMI";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
       <BMI/>
       <Gallery/>
       <Contact/>
+      <Footer/>
     </>
   );
 }
