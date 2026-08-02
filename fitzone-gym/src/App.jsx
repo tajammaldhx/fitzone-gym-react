@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Testimonials from "./components/Testimonials/Testimonials";
 import BMI from "./components/BMI/BMI";
 import Gallery from "./components/Gallery/Gallery";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Testimonials/>
       <BMI/>
       <Gallery/>
+      <Contact/>
     </>
   );
 }
